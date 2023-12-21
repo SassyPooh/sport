@@ -1,0 +1,20 @@
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Capacity</th>
+        <th>action</th>
+    </tr>
+    <tr *ngFor= "let stadium of stadiums ">
+        <td> {{stadium._id}} </td>
+        <td>{{stadium.name}}</td>
+        <td>{{stadium.country}}</td>
+        <td>{{stadium.capacity}}</td>
+        <td>
+            <button type="button" class="btn btn-outline-info" >display</button>
+            <button type="button" class="btn btn-outline-danger" >delete</button>
+            <button type="button" class="btn btn-outline-warning"  >edit</button>
+        </td>
+    </tr>
+</table>

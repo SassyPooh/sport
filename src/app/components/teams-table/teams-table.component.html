@@ -1,0 +1,22 @@
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Team</th>
+        <th>foundation</th>
+        <th>stadium</th>
+        <th>owner</th>
+        <th>action</th>
+    </tr>
+    <tr *ngFor= "let team of teams ">
+        <td> {{team._id}} </td>
+        <td>{{team.name}}</td>
+        <td>{{team.foundation}}</td>
+        <td>{{team.stadium}}</td>
+        <td>{{team.owner}}</td>
+        <td>
+            <button type="button" class="btn btn-outline-info" >display</button>
+            <button type="button" class="btn btn-outline-danger" >delete</button>
+            <button type="button" class="btn btn-outline-warning"  >edit</button>
+        </td>
+    </tr>
+</table>
